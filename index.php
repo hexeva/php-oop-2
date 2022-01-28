@@ -25,8 +25,8 @@ $customer_one->addProduct($guitar_lespaul);
 $customer_one->addProduct($keyboard_roland);
 $customer_one->addProduct($guitar_telecaster);
 
-$customer_cart = $customer_one->getShoppingCar();
-var_dump($customer_cart);
+$customer_cart = $customer_one->getShoppingCart();
+
 
 
 
@@ -48,15 +48,21 @@ var_dump($customer_cart);
         <span>
             <?php echo $customer_one->getName(); ?>
         </span> 
+
+        ecco il suo carrello:
     </h1>
 
-    <?php foreach($customer_cart as $item) {?>
+    <?php foreach($customer_cart as $item){ ?>
 
         <div class="cart">
-            <div class="single-product">prova</div>
+            <div class="single-product">
+                <h2>Marca : <?php echo $item->brand; ?></h2>
+                <h3>categoria: <?php echo $item->type; ?></h3>
+                <h3>Prezzo: <?php echo $item->price;?> </h3>
+            </div>
         </div>
-        
-    <?php } ?>
+
+  <?php } ?>
 
    
 </div>
