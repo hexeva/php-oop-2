@@ -10,7 +10,9 @@ class Guitars extends MusicInstruments {
     // sovrascriverò per questa classe la funzione construct aggiungendo il parametro strings
 
     public function __construct($_brand,$_type,$_price,$_kind){
+        parent::__construct($_brand,$_type,$_price);
         $this->kind = $_kind;
+
     }
         
    
