@@ -1,5 +1,6 @@
-
-
+<?php 
+require_once __DIR__ . '/MusicInstruments.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">

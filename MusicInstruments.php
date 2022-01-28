@@ -5,5 +5,7 @@ class MusicInstruments {
     public $type;
 
     public $price;
+
+    
 }
 ?>
