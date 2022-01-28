@@ -9,12 +9,22 @@ require_once __DIR__ . '/Customer.php';
 
 
 $keyboard_roland = new Keyboards('ROLAND','keyboard',2000);
-var_dump($keyboard_roland);
+
+$keyboard_yamaha = new Keyboards('YAMAHA','Keyboards',1700);
+// var_dump($keyboard_roland);
+// var_dump($keyboard_yamaha);
+
 
 $guitar_telecaster = new Guitars('FENDER','guitar',1800,'electric');
-var_dump($guitar_telecaster);
+// var_dump($guitar_telecaster);
+
+$guitar_lespaul = new Guitars('GIBSON','guitar',2500,'electric');
 
 $customer_one = new Customer('Ettore','Rossi','ettorino@email.it');
+$customer_one->addProduct($guitar_lespaul);
+$customer_one->addProduct($keyboard_roland);
+$customer_one->addProduct($guitar_telecaster);
+
 var_dump($customer_one);
 
 ?>
