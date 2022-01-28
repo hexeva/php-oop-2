@@ -9,7 +9,7 @@ require_once __DIR__ . '/Keyboards.php';
 $keyboard = new Keyboards('ROLAND','keyboard',2000);
 var_dump($keyboard);
 
-$guitar = new Guitars('FENDER','guitar',1800);
+$guitar = new Guitars('FENDER','guitar',1800,'electric');
 var_dump($guitar);
 
 ?>
