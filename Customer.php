@@ -22,5 +22,16 @@ class Customer {
         $this->shopping_cart[] = $product;
 
     }
+    // funzione per nome utente completo
+    public function getName(){
+        return $this->name . ' ' . $this->lastname;
+    }
+
+    // Funzione per rendere disponibile lo shopping_cart fuori da customer per poterlo ciclare
+
+    public function getShoppingCart(){
+        return $this->shopping_cart;
+    }
+
 }
 ?>

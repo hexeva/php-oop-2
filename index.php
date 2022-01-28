@@ -25,7 +25,10 @@ $customer_one->addProduct($guitar_lespaul);
 $customer_one->addProduct($keyboard_roland);
 $customer_one->addProduct($guitar_telecaster);
 
-var_dump($customer_one);
+$customer_cart = $customer_one->getShoppingCar();
+var_dump($customer_cart);
+
+
 
 ?>
 
@@ -34,10 +37,29 @@ var_dump($customer_one);
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+
+<div class="container">
+    <h1>WELCOME 
+        <span>
+            <?php echo $customer_one->getName(); ?>
+        </span> 
+    </h1>
+
+    <?php foreach($customer_cart as $item) {?>
+
+        <div class="cart">
+            <div class="single-product">prova</div>
+        </div>
+        
+    <?php } ?>
+
+   
+</div>
 
     
 </body>
