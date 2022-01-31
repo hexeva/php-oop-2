@@ -1,8 +1,8 @@
 <?php 
 
-require_once __DIR__ . '/MusicInstruments.php';
+require_once __DIR__ . '/Instrument.php';
 
-class Guitars extends MusicInstruments {
+class Guitars extends Instrument {
     public $strings = 6;
     public $kind;
 
