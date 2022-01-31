@@ -17,7 +17,7 @@ $keyboard_yamaha = new Keyboards('YAMAHA','Keyboards',1700);
 
 // aggiunti try and catch per la gestione dell'errore
 try {
-$guitar_telecaster = new Guitars('FENDER','guitar',1200,'electric');
+$guitar_telecaster = new Guitars('FENDER','guitar','pippo','electric');
 // var_dump($guitar_telecaster);
 } catch(Exception $e){
     echo '<div class="error"> This server is under maintance </div>';
@@ -31,6 +31,7 @@ $guitar_lespaul = new Guitars('GIBSON','guitar',1500,'electric');
 } catch(Exception $e){
     echo '<div class="error"> This server is under maintance </div>';
     die();
+    
 }
 
 
