@@ -1,6 +1,8 @@
 <?php 
 // MODELLO CLASSE BASE
 class MusicInstruments {
+
+    
     public $brand;
 
     public $type;
