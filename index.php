@@ -15,13 +15,24 @@ $keyboard_yamaha = new Keyboards('YAMAHA','Keyboards',1700);
 // var_dump($keyboard_yamaha);
 
 
-$guitar_telecaster = new Guitars('FENDER','guitar',1300,'electric');
+// aggiunti try and catch per la gestione dell'errore
+try {
+$guitar_telecaster = new Guitars('FENDER','guitar',1200,'electric');
 // var_dump($guitar_telecaster);
+} catch(Exception $e){
+    echo '<div class="error"> This server is under maintance </div>';
+    die();
+}
 
 
+try {
+$guitar_lespaul = new Guitars('GIBSON','guitar',1500,'electric');
 
+} catch(Exception $e){
+    echo '<div class="error"> This server is under maintance </div>';
+    die();
+}
 
-$guitar_lespaul = new Guitars('GIBSON','guitar',2500,'electric');
 
 $customer_one = new Customer('Ettore','Rossi','ettorino@email.it');
 $customer_one->addProduct($guitar_lespaul);

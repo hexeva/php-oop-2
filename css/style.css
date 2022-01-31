@@ -32,3 +32,11 @@ span{
     margin-bottom: 30px;
     background-color: bisque;
 }
+.error{
+    width: 50%;
+    margin: auto;
+    color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
