@@ -13,6 +13,15 @@ class Guitars extends Instrument {
         parent::__construct($_brand,$_type,$_price);
         $this->kind = $_kind;
 
+        // voglio che il parametro prezzo sia effettivamente un numero
+
+        if(is_int($_price)) {
+            $this->price = $_price;
+        } else {
+            throw new exception('$_price must be a an integer');
+   
+        }
+
     }
         
    

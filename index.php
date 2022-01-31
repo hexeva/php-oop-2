@@ -15,9 +15,11 @@ $keyboard_yamaha = new Keyboards('YAMAHA','Keyboards',1700);
 // var_dump($keyboard_yamaha);
 
 
-$guitar_telecaster = new Guitars('FENDER','guitar',1800,'electric');
-var_dump($guitar_telecaster);
-die();
+$guitar_telecaster = new Guitars('FENDER','guitar',1300,'electric');
+// var_dump($guitar_telecaster);
+
+
+
 
 $guitar_lespaul = new Guitars('GIBSON','guitar',2500,'electric');
 
